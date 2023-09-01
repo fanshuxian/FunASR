@@ -4,7 +4,7 @@ set(files ${files1})
 
 message("files: "${files})
 
-add_library(funasr SHARED ${files})
+add_library(funasr STATIC ${files})
 
 if(WIN32)
     set(EXTRA_LIBS pthread yaml-cpp csrc glog)

@@ -33,6 +33,7 @@ endif()
 include_directories(${PROJECT_SOURCE_DIR}/third_party/kaldi-native-fbank)
 include_directories(${PROJECT_SOURCE_DIR}/third_party/yaml-cpp/include)
 
+set(BUILD_SHARED_LIBS OFF)
 if(ENABLE_GLOG)
     include_directories(${PROJECT_SOURCE_DIR}/third_party/glog)
     set(BUILD_TESTING OFF)
